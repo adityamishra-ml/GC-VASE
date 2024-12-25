@@ -7,5 +7,14 @@
 ## Diagram
 ![](images/gcvase.jpeg)
 
+## Requirements
+```bash
+pip install -r requirements.txt
+```
 
+## Data Pre-processing
+The first step is data preparation. Begin by downloading the dataset, ensuring the folder structure remains unaltered. The dataset can be obtained from the [ERP-CORE repository](https://osf.io/thsqg/). Within the `data_preparation` directory, the `create_dataset.py` script processes the data to generate a Pickle file containing all examples, along with their corresponding subject and task labels. You can execute the script using the following command:
 
+```bash
+python create_dataset.py
+```
