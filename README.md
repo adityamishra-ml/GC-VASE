@@ -47,7 +47,7 @@ python train.py --recon_enabled 1 --num_layers 0
 To train the GC-VASE model with a single latent space run the following command:
 
 ```bash
-!python train-org.py --sub_cross_s_enabled 1 --task_cross_t_enabled 1 --epochs 1 --num_layers 0
+python train-org.py --sub_cross_s_enabled 1 --task_cross_t_enabled 1 --epochs 1 --num_layers 0
 ```
 
 To train the GC-VASE model without GCNN layers, edit the `split_model.py` and change the number of GCNN layers to `0`.
