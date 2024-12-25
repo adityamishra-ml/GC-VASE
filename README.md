@@ -51,3 +51,21 @@ python train-org.py --sub_cross_s_enabled 1 --task_cross_t_enabled 1 --epochs 1 
 ```
 
 To train the GC-VASE model without GCNN layers, edit the `split_model.py` and change the number of GCNN layers to `0`.
+
+## Running the Evaluation Script
+
+To evaluate the model's performance, run the following command:
+
+```bash
+python eval.py --model_path model-name.pt --data_dir ./ --data_line simple --num_layers 0
+```
+## Citation
+If you find this research work useful, please consider citing:
+
+```bash
+Bibtex will be added soon
+```
+
+## Acknowledgement
+This research was supported by [Mitacs GRI 2024](https://www.mitacs.ca/our-programs/globalink-research-internship-students/) program.
+
