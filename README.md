@@ -19,7 +19,7 @@ The first step is data preparation. Begin by downloading the dataset, ensuring t
 python create_dataset.py
 ```
 
-Use the `sleepedfx.py` in the `SleepEDFx` folder for pre-processing the [SleepEDFx]{https://www.physionet.org/content/sleep-edfx/1.0.0/} database. It can be implemented by the following command:
+Use the `sleepedfx.py` in the `SleepEDFx` folder for pre-processing the [SleepEDFx](https://www.physionet.org/content/sleep-edfx/1.0.0/) database. It can be implemented by the following command:
 
 ```bash
 python sleepedfx.py
