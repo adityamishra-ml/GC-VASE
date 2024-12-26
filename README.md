@@ -54,7 +54,7 @@ python train-org.py --sub_cross_s_enabled 1 --task_cross_t_enabled 1 --epochs 1 
 
 ## Running the Evaluation Script
 
-To evaluate the model's performance, run the following command:
+To evaluate the model's performance run the following command:
 
 ```bash
 python eval.py --model_path model-name.pt --data_dir ./ --data_line simple --num_layers 0
