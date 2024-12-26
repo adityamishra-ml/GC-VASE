@@ -8,6 +8,8 @@
 ![](images/gcvase.jpeg)
 
 ## Requirements
+Use the `requirements.txt` file to install all the necessary libraries. Execute the following command:
+
 ```bash
 pip install -r requirements.txt
 ```
