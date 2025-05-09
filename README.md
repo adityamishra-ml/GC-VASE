@@ -65,7 +65,12 @@ python eval.py --model_path model-name.pt --data_dir ./ --data_line simple --num
 If you find this research work useful, please consider citing:
 
 ```bash
-Bibtex will be added soon
+@article{mishra2025subject,
+  title={Subject Representation Learning from EEG using Graph Convolutional Variational Autoencoders},
+  author={Mishra, Aditya and Samin, Ahnaf Mozib and Etemad, Ali and Hashemi, Javad},
+  journal={arXiv preprint arXiv:2501.16626},
+  year={2025}
+}
 ```
 
 ## Acknowledgement
