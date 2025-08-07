@@ -32,24 +32,24 @@ python sleepedfx.py
 - To train the GC-VASE model run the following command:
 
 ```bash
-python train.py --sub_contra_s_enabled 1 --task_contra_t_enabled 1 --latent_permute_s_enabled 1 --latent_permute_t_enabled 1 --num_layers 0
+python train.py --sub_contra_s_enabled 1 --task_contra_t_enabled 1 --latent_permute_s_enabled 1 --latent_permute_t_enabled 1 
 ```
 
 - To train the GC-VASE model without contrastive learning run the following command:
 
 ```bash
-python train.py --latent_permute_s_enabled 1 --latent_permute_t_enabled 1 --num_layers 0
+python train.py --latent_permute_s_enabled 1 --latent_permute_t_enabled 1 
 ```
 
 - To train the GC-VASE model with Autoencoder (AE replacing VAE) run the following command:
 
 ```bash
-python train.py --recon_enabled 1 --num_layers 0
+python train.py --recon_enabled 1 
 ```
 - To train the GC-VASE model with a single latent space run the following command:
 
 ```bash
-python train-org.py --sub_cross_s_enabled 1 --task_cross_t_enabled 1 --epochs 1 --num_layers 0
+python train-org.py --sub_cross_s_enabled 1 --task_cross_t_enabled 1 --epochs 1 
 ```
 
 - To train the GC-VASE model without GCNN layers, edit the `split_model.py` and change the number of GCNN layers to `0`.
@@ -59,17 +59,19 @@ python train-org.py --sub_cross_s_enabled 1 --task_cross_t_enabled 1 --epochs 1 
 To evaluate the model's performance run the following command:
 
 ```bash
-python eval.py --model_path model-name.pt --data_dir ./ --data_line simple --num_layers 0
+python eval.py --model_path model-name.pt --data_dir ./ --data_line simple 
 ```
 ## Citation
 If you find this research work useful, please consider citing:
 
 ```bash
-@article{mishra2025subject,
+@inproceedings{mishra2025subject,
   title={Subject Representation Learning from EEG using Graph Convolutional Variational Autoencoders},
   author={Mishra, Aditya and Samin, Ahnaf Mozib and Etemad, Ali and Hashemi, Javad},
-  journal={arXiv preprint arXiv:2501.16626},
-  year={2025}
+  booktitle={ICASSP 2025-2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  pages={1--5},
+  year={2025},
+  organization={IEEE}
 }
 ```
 
