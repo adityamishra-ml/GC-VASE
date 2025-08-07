@@ -29,7 +29,7 @@ python sleepedfx.py
 
 ## Reproducing Training Results
 
-The gc_vase directory contains code for the GC-VASE variant and the ft_gc_vase directory contains the subject adaptive fine-tunied GC-VASE version using adapters and attention layers.
+The `gc_vase` directory contains code for the GC-VASE variant and the `ft_gc_vase` directory contains the subject adaptive fine-tunied GC-VASE version using adapters and attention layers.
 
 - To train the GC-VASE model run the following command:
 
