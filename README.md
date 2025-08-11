@@ -15,7 +15,7 @@
 
 ## Results
 
->Subject identification and task classification balanced accuracies (%) on the ERP-Core dataset
+>Table 1: Subject identification and task classification balanced accuracies (%) on the ERP-Core dataset
 
 | Model     | Subject Identification - Subject latent | Subject Identification - Residual latent | Task classification - Residual latent | Task classification - Subject latent |
 |-----------|------------------------------------------|-------------------------------------------|----------------------------------------|---------------------------------------|
@@ -25,7 +25,7 @@
 | **AE**      | 60.68                                   | 61.08                                     | 31.43                                  | 31.62                                 |
 | **GC-VASE** | **89.81**                               | 85.40                                     | 36.18                                  | 31.83                                 |
 
->Ablation study on the impact of major components in GC-VASE for subject identification on ERP-Core
+>Table 2: Ablation study on the impact of major components in GC-VASE for subject identification on ERP-Core
 
 | Variants                 | F1-score (%)        | Accuracy (%)       |
 |--------------------------|---------------------|--------------------|
@@ -34,7 +34,7 @@
 | w/o contrastive learning | 80.18 (↓ 9.40)      | 80.84 (↓ 8.97)     |
 | w/o split-latent         | 81.51 (↓ 8.07)      | 81.72 (↓ 8.02)     |
 
->Subject identification and task classification balanced accuracies (%) on SleepEDFx-20 with 20 subjects
+>Table 3: Subject identification and task classification balanced accuracies (%) on SleepEDFx-20 with 20 subjects
 
 | Model      | Split Latent | Subject Identification - Sub. latent | Subject Identification - Res. latent | Task classification - Res. latent | Task classification - Sub. latent |
 |------------|--------------|---------------------------------------|---------------------------------------|------------------------------------|------------------------------------|
