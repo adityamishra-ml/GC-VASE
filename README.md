@@ -6,15 +6,16 @@
 > We propose GC-VASE, a graph convolutional-based variational autoencoder that leverages contrastive learning for subject representation learning from EEG data. Our method successfully learns robust subject-specific latent representations using the split-latent space architecture tailored for subject identification. To enhance the model's adaptability to unseen subjects without extensive retraining, we introduce an attention-based adapter network for fine-tuning, which reduces the computational cost of adapting the model to new subjects. Experiments demonstrate that our method significantly outperforms other deep learning approaches, achieving state-of-the-art results with a subject balanced accuracy of 89.81% and 70.85% on the ERP-Core and SleepEDFx-20 datasets, respectively. After subject adaptive fine-tuning, GC-VASE further improves the subject balanced accuracy to 90.31% on ERP-Core. Additionally, we perform a detailed ablation study to highlight the impact of the key components of our method.
 
 ## Model Architecture
-![](images/gcvase.pdf)
+![](images/gcvase.jpeg)
 >The proposed GC-VASE model incorporates a split latent space. The encoder splits the latent space into subject-specific space and residual latent space that are subsequently used for subject and task classification through an XGB classifier.
 
 ## t-SNE Plot
-![](images/tsne.pdf)
+![](images/tsne.jpeg)
 >t-SNE plots of split-latents encoded on the test set (unseen subjects), colored by their true labels. The plots, in order, depict: subject space colored by subject, subject space colored by task, task space colored by task, and task space colored by subject.
 
 ## Results
-### Subject identification and task classification balanced accuracies (%) on the ERP-Core dataset
+
+>Subject identification and task classification balanced accuracies (%) on the ERP-Core dataset
 
 | Model     | Subject Identification - Subject latent | Subject Identification - Residual latent | Task classification - Residual latent | Task classification - Subject latent |
 |-----------|------------------------------------------|-------------------------------------------|----------------------------------------|---------------------------------------|
